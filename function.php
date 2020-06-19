@@ -8,7 +8,7 @@ $header[] = "Accept: application/json";
 $header[] = "Accept-Language: id-ID";
 $header[] = "Content-Type: application/json; charset=UTF-8";
 $header[] = "X-AppVersion: 3.30.2";
-$header[] = "X-UniqueId: ".time()."57".mt_rand(1000,9999);
+$header[] = "X-UniqueId: ".time()."-5.387".mt_rand(100,999).",105.27".mt_rand(1000,9999);
 $header[] = "Connection: keep-alive";
 $header[] = "X-User-Locale: id_ID";
 $header[] = "X-Location: -5.387  105.27";
