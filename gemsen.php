@@ -5,7 +5,6 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 echo color("blue","  [♥]  Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
 echo color("red","   [♡] TOLONG DIBACA DULU SEBELUM MENGGUNAKAN SC \n");
 echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA 62xxxxxxxxxx \n");
-echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
 echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
 echo color("blue"," [♡] MAKLUM LAH NAMANYA JUGA SC GRATISAN \n");
 echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
@@ -23,11 +22,11 @@ $pass =  ( '║ User Login : ' );
 echo "\033[30;40m";
 $user = trim(fgets(STDIN));
 echo "\033[0m";
-if($user == "ReNdYgAnS")
+if($user == "y")
 {
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-	echo "\e[93mNAMA LO SIAPA CUK ?: ";
+	echo "\e[93mNAMA LO SIAPA BANG ?: ";
 	$input = trim(fgets(STDIN));
 	echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 		goto ulang;
@@ -36,22 +35,21 @@ else
 {
 		echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";	
 		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
-		echo "\e[92m[🚫]        \e[91mMAMPOS GA PUNYA AKUNNYA 😆    \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️           \e[92m [🚫]\n";
-		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN          \e[92m [🚫]\n";
-	        echo "\e[92m[🚫]          \e[91mTELEGRAM :@BANANACREAMY     \e[92m [🚫]\n";
-		echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
+		echo "\e[92m[🚫]        \e[91mMAMPOS GA PUNYA AKUNNYA 😆  \e[92m [🚫]\n";
+	        echo "\e[92m[🚫]              \e[91m⚠️ WARNING ⚠️        \e[92m [🚫]\n";
+		echo "\e[92m[🚫]           \e[91mSEGERA MINTA IZIN        \e[92m [🚫]\n";
+	       	echo "\e[91m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 goto login;
 }
 	return rtrim( $input, "\n" );
 ulang:
 echo "\n";
-echo "\e[92m             (HALLO MAS $input A.K.A NAK HARAM)               \n";
+echo "\e[92m             (HALLO BANG $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
-        echo color("yellow","📲▶️ NOMOR LO CUK : ");
+        echo color("yellow","📲▶️ NOMOR LOE BANG : ");
         // $no = trim(fgets(STDIN));
         $nohp = trim(fgets(STDIN));
         $nohp = str_replace("62","62",$nohp);
@@ -78,7 +76,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $register = request("/v5/customers", null, $data);
         if(strpos($register, '"otp_token"')){
         $otptoken = getStr('"otp_token":"','"',$register);
-        echo color("yellow","📶▶️ KODE OTP UDAH GUA KIRIM CUK")."\n";
+        echo color("yellow","📶▶️ KODE OTP UDAH GUA KIRIM BANG")."\n";
         otp:
         echo color("red","💬▶️ Otp : ");
         $otp = trim(fgets(STDIN));
@@ -90,7 +88,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO CLAIM KAYANYA CUK🎫▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO CLAIM KAYANYA BANG🎫▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("red","🔐▶️ INI VOC 20+10 LAMA");
         echo "\n".color("yellow","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
@@ -135,7 +133,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(3);
         }
         sleep(2);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD0906"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("blue","🔓▶️ Message: ".$messageboba09);
         sleep(2);
@@ -208,12 +206,12 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
                                         $debug['text'] = $pesan;
                                         $debug['respon'] = json_decode($datas, true);
          setpin:
-         echo "\n".color("purple","🔧▶️ SET PIN CUK BIAR AMAN !!!: y/n ");
+         echo "\n".color("purple","🔧▶️ SET PIN BANG BIAR AMAN !!!: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 666123 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"666123"}';
+         echo color("red","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN MU = 112233 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
