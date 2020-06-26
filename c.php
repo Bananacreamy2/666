@@ -8,7 +8,7 @@ echo color("purple","[♥] NGETIK NOMORNYA BEGINI YA 62xxxxxxxxxx \n");
 echo color("nevy","  [♡] JANGAN LUPA FOLLOW IG GUE YA : @Bananacreamy \n");
 echo color("yellow","[♥] KALO GA NGAMBIL OTOMATIS GAGAL BERARTI \n");
 echo color("blue"," [♡] MAKLUM LAH NAMANYA JUGA SC GRATISAN \n");
-echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT INSTAGRAM \n");
+echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n");
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 	echo "\n";
 echo "\e[92m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
@@ -92,7 +92,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         save("token.txt",$token);
         echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🎫AUTO CLAIM KAYANYA CUK🎫▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("red","🔐▶️ INI VOC A);
-        echo "\n".color("yellow","▶️ Please wait");
+        echo "\n".color("nevy"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("green",".");
         sleep(20);
@@ -106,7 +106,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","🔐▶️ Message: ".$message);
 	gocar:
         echo "\n".color("yellow","🔐▶️ INI VOC B ");
-        echo "\n".color("green","▶️ Please wait");
+        echo "\n".color("green"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("yellow",".");
         sleep(20);
@@ -120,7 +120,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red","🔐▶️ Message: ".$message);
         gofood:
         echo "\n".color("yellow","🔐▶️ INI VOC C");
-        echo "\n".color("green","▶️ Please wait");
+        echo "\n".color("green"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("blue",".");
         sleep(10);
@@ -129,7 +129,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("red","🔓▶️ Message: ".$message);
         echo "\n".color("yellow","🔐▶️ INI ULANG SEMUA VOC");
-        echo "\n".color("green","▶️ Please wait");
+        echo "\n".color("green"," Please wait");
         for($a=1;$a<=3;$a++){
         echo color("white",".");
         sleep(20);
