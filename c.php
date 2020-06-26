@@ -161,7 +161,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("purple","                     4. ".$voucher4);
         echo "\n".color("blue","                     5. ".$voucher5);
         echo "\n".color("nevy","                     6. ".$voucher6);
-        echo "\n".color("white","                     7. ".$voucher7);
+        echo "\n".color("red","                     7. ".$voucher7);
         echo "\n".color("green","                     8. ".$voucher8);
         echo "\n".color("yellow","                     9. ".$voucher9);
         echo "\n".color("red","                     10. ".$voucher10);
