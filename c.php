@@ -103,9 +103,9 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("green","Message: ".$message);
         goto gocar;
         }else{
-        echo "\n".color("yellow"," Message: ".$message);
+        echo "\n".color("green"," Message: ".$message);
 	gocar:
-        echo "\n".color("green"," 🥂 CLAIM VOC B🥂. ");
+        echo "\n".color("yellow"," 🥂 CLAIM VOC B🥂. ");
         echo "\n".color("red"," ⏳▶️Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
@@ -169,18 +169,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("blue","                     12. ".$voucher12);
         echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
-                                        $ch = curl_init();
-                                        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-                                        curl_setopt($ch, CURLOPT_URL, $url);
-                                        curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-                                        curl_setopt($ch, CURLOPT_POSTFIELDS, $post );   
-                                        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                                        $datas = curl_exec($ch);
-                                        $error = curl_error($ch);
-                                        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-                                        curl_close($ch);
-                                        $debug['text'] = $pesan;
-                                        $debug['respon'] = json_decode($datas, true);
          setpin:
          echo "\n".color("yellow","SET PIN GA: y/n ");
          $pilih1 = trim(fgets(STDIN));
