@@ -88,9 +88,9 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow","✔️▶️ BERHASIL MEMDAFTAR\n");
         $token = getStr('"access_token":"','"',$verif);
         $uuid = getStr('"resource_owner_id":',',',$verif);
-        echo color("white","+] Your access token : ".$token."\n\n");
+        echo color("nevy","+] AKSES TOKEN LO : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🔊AUTO CLAIM KAYANYA CUK🔊▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo color("green","\n▬▬▬▬▬▬▬▬▬▬▬▬🔊AUTO CLAIM KAYANYA CUK🔊▬▬▬▬▬▬▬▬▬▬▬▬");
         echo "\n".color("yellow"," 🥂CLAIM VOC A🥂.");
         echo "\n".color("red","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
