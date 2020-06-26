@@ -120,7 +120,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo "\n".color("red"," Message: ".$message);
         gofood:
         echo "\n".color("yellow"," 🥂 CLAIM VOC C🥂.");
-        echo "\n".color("green"," ⏳▶️Please wait");
+        echo "\n".color("red"," ⏳▶️Please wait");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(10);
@@ -137,7 +137,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         sleep(3);
         $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
-        echo "\n".color("white"," Message: ".$messageboba09);
+        echo "\n".color("green"," Message: ".$messageboba09);
         sleep(1);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -154,20 +154,20 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         $voucher11 = getStr1('"title":"','",',$cekvoucher,"11");
         $voucher12 = getStr1('"title":"','",',$cekvoucher,"12");
         $voucher13 = getStr1('"title":"','",',$cekvoucher,"13");
-        echo "\n".color("white"," Total voucher ".$total." : ");
-        echo "\n".color("white","                     1. ".$voucher1);
-        echo "\n".color("white","                     2. ".$voucher2);
-        echo "\n".color("white","                     3. ".$voucher3);
-        echo "\n".color("white","                     4. ".$voucher4);
-        echo "\n".color("white","                     5. ".$voucher5);
-        echo "\n".color("white","                     6. ".$voucher6);
+        echo "\n".color("nevy"," Total voucher ".$total." : ");
+        echo "\n".color("green","                     1. ".$voucher1);
+        echo "\n".color("yellow","                     2. ".$voucher2);
+        echo "\n".color("red","                     3. ".$voucher3);
+        echo "\n".color("purple","                     4. ".$voucher4);
+        echo "\n".color("blue","                     5. ".$voucher5);
+        echo "\n".color("nevy","                     6. ".$voucher6);
         echo "\n".color("white","                     7. ".$voucher7);
-        echo "\n".color("white","                     8. ".$voucher8);
-        echo "\n".color("white","                     9. ".$voucher9);
-        echo "\n".color("white","                     10. ".$voucher10);
-	echo "\n".color("white","                     11. ".$voucher11);
-        echo "\n".color("white","                     12. ".$voucher12);
-        echo "\n".color("white","                     13. ".$voucher13);
+        echo "\n".color("green","                     8. ".$voucher8);
+        echo "\n".color("yellow","                     9. ".$voucher9);
+        echo "\n".color("red","                     10. ".$voucher10);
+	echo "\n".color("purple","                     11. ".$voucher11);
+        echo "\n".color("blue","                     12. ".$voucher12);
+        echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
                                         $ch = curl_init();
                                         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
