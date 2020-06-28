@@ -16,7 +16,6 @@ $email = trim(fgets(STDIN));
 echo "[+] Password : ";
 $password = trim(fgets(STDIN));
 sleep(15);
-}
 $register = $booking->register($email, $password);
 
 if (!$register->success) {
