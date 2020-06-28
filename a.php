@@ -45,8 +45,6 @@ $str        = '1234';
 $shufflestr = str_shuffle($str);
 $regis_url = "https://iphone-xml.booking.com/json/mobile.createUserAccount?&user_os=7.1.2&user_version=22.9-android&device_id=aa7bf591-e6dd-419a-8a4f-29e762d89$shufflestr&network_type=wifi&languagecode=en-us&display=large_mdpi&affiliate_id=337862";
 $wishlist_url = 'https://iphone-xml.booking.com/json/mobile.Wishlist?&user_os=7.1.2&user_version=22.9-android&device_id=aa7bf591-e6dd-419a-8a4f-29e762d8948a&network_type=wifi&languagecode=en-us&display=large_mdpi&affiliate_id=337862';
-
-
 $g          = file_get_contents($argv[1]);
 $f          = explode("\r\n", $g);
 $f          = array_unique($f);
