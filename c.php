@@ -201,7 +201,8 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          echo color("green","!] MASUKAN LAGI\n");
          goto ulang;
          }
+
 //  }
 
-// echo change()."\n";
 
+// echo change()."\n";
