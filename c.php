@@ -171,14 +171,14 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
         echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
          setpin:
-         echo "\n".color("yellow","SET PIN GA: y/n ");
+         echo "\n".color("nevy","?] Mau set pin?: y/n ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("green","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN LO = 666123 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"666123"}';
+         echo color("red","========( PIN ANDA = 123789 )========")."\n";
+         $data2 = '{"pin":"123789"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp pin: ";
+         echo "Otp set pin: ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
@@ -190,17 +190,26 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }
          }
          }
-         echo color("red","-] KODE OTP LO SALAH");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("yellow","!] INPUT ULANG NOMOR LO..\n");
+         }else{
+         goto setpin;
+         }
+         }else{
+         echo color("red","-] Otp yang anda input salah");
+         echo"\n==================================\n\n";
+         echo color("yellow","!] Silahkan input kembali\n");
          goto otp;
          }
          }else{
-         echo color("red","-] NOMOR SALAH/ERROR BY SYSTEM");
-         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("green","!] MASUKAN LAGI\n");
+         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
+         echo "\nMau ulang? (y/n): ";
+         $pilih = trim(fgets(STDIN));
+         if($pilih == "y" || $pilih == "Y"){
+         echo "\n==============Register==============\n";
          goto ulang;
-         }
-//  }
-
-// echo change()."\n";
+         }else{
+         echo "\n==============Register==============\n";
+         goto ulang;
+  }
+ }
+}
+echo change()."\n"; ?>
