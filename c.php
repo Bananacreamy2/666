@@ -187,8 +187,6 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }else{
          echo color("red","-] GAGAL!!!\n");
          }
-         }
-         }
          }else{
          echo color("red","-] KODE OTP LO SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
