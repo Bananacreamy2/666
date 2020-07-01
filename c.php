@@ -185,20 +185,20 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }else if($pilih1 == "n" || $pilih1 == "N"){
          die();
          }else{
-         echo color("white","-] GAGAL!!!\n");
+         echo color("red","-] GAGAL!!!\n");
          }
          }
          }
          }else{
-         echo color("white","-] OTP SALAH");
+         echo color("red","-] KODE OTP LO SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] INPUT ULANG..\n");
+         echo color("yellow","!] INPUT ULANG NOMOR LO..\n");
          goto otp;
          }
          }else{
-         echo color("white","-] NOMOR SALAH");
+         echo color("red","-] NOMOR SALAH/ERROR BY SYSTEM");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
-         echo color("white","!] MASUKAN LAGI\n");
+         echo color("green","!] MASUKAN LAGI\n");
          goto ulang;
          }
 //  }
