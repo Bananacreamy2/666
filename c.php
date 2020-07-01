@@ -170,7 +170,6 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
         echo "\n".color("blue","                     12. ".$voucher12);
         echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
-
          setpin:
          echo "\n".color("purple","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
          $pilih1 = trim(fgets(STDIN));
