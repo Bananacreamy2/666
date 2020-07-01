@@ -12,7 +12,6 @@ echo color("purple"," [♥] SCRIPT INI GRATIS, BILA ADA YG JUAL CHAT TELEGRAM \n
 echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
 	echo "\n";
                \n";
-// function change(){
         $nama = nama();
         $email = str_replace(" ", "", $nama) . mt_rand(100, 999);
         echo color("yellow","📲▶️ NOMOR LO CUK : ");
