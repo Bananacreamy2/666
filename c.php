@@ -136,7 +136,7 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
         sleep(7);
         }
         sleep(1);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
+        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
         $messageboba09 = fetch_value($boba09,'"message":"','"');
         echo "\n".color("green"," Message: ".$messageboba09);
         sleep(1);
@@ -189,7 +189,7 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }
          }
          }
-         }
+         }else{
          echo color("red","-] KODE OTP LO SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] INPUT ULANG NOMOR LO..\n");
@@ -201,8 +201,6 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          echo color("green","!] MASUKAN LAGI\n");
          goto ulang;
          }
-
 //  }
-
 
 // echo change()."\n";
