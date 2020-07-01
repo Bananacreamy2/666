@@ -170,15 +170,16 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
         echo "\n".color("blue","                     12. ".$voucher12);
         echo "\n".color("nevy","                     13. ".$voucher13);
         echo"\n";
+
          setpin:
-         echo "\n".color("nevy","?] Mau set pin?: y/n ");
+         echo "\n".color("purple","🔧▶️ SET PIN GOPAY SEKALIAN ? !!!: Y/N ");
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("red","========( PIN ANDA = 123789 )========")."\n";
-         $data2 = '{"pin":"123789"}';
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬🔧 PIN GOPAY = 010101 🔧▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"010101"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
-         echo "Otp set pin: ";
+         echo "OTP PIN 6 digit : ";
          $otpsetpin = trim(fgets(STDIN));
          $verifotpsetpin = request("/wallet/pin", $token, $data2, null, $otpsetpin, $uuid);
          echo $verifotpsetpin;
@@ -189,27 +190,18 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }
          }
          }
-         }
-         }
-         goto setpin;
-         }
          }else{
-         echo color("red","-] Otp yang anda input salah");
-         echo"\n==================================\n\n";
-         echo color("yellow","!] Silahkan input kembali\n");
-         goto otp;
-         }
-         }else{
-         echo color("red","NOMOR SUDAH TERDAFTAR/SALAH !!!");
-         echo "\nMau ulang? (y/n): ";
-         $pilih = trim(fgets(STDIN));
-         if($pilih == "y" || $pilih == "Y"){
-         echo "\n==============Register==============\n";
+         echo color("red","-] OTP SALAH ");
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
+         echo color("purple","!] MASULIN NOMER ULANG\n");
          goto ulang;
+         }
          }else{
-         echo "\n==============Register==============\n";
+         echo color("red","-] Nomor udah keregist.");
+         echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
+         echo color("purple","!] Coba Nomer Fresh Lainnya \n");
          goto ulang;
-  }
- }
-}
-echo change()."\n"; ?>
+         }
+//  }
+
+// echo change()."\n";
