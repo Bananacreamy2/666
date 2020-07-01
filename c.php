@@ -188,13 +188,13 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
-         }
+         die();
          }else{
          echo color("red","-] OTP SALAH ");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("purple","!] MASULIN NOMER ULANG\n");
          goto ulang;
-         }
+         die();
          }else{
          echo color("red","-] Nomor udah keregist.");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
