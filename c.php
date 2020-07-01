@@ -189,7 +189,7 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          }
          }
          }
-         }else{
+         }
          echo color("red","-] KODE OTP LO SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] INPUT ULANG NOMOR LO..\n");
