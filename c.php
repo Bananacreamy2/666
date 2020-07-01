@@ -124,7 +124,6 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
         for($a=1;$a<=3;$a++){
         echo color("nevy",".");
         sleep(7);
-        }
         }else{
         echo "\n".color("red"," Message: ".$message);
         gofood:
