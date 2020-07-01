@@ -188,6 +188,8 @@ echo color("green","# # # # # # # # # # # # # # # # # # # # # # # \n");
          echo color("red","-] GAGAL!!!\n");
          }
          }
+         }
+         }
          echo color("red","-] KODE OTP LO SALAH");
          echo"\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\n";
          echo color("yellow","!] INPUT ULANG NOMOR LO..\n");
